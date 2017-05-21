@@ -8,7 +8,8 @@
                  [stylefruits/gniazdo "1.0.0"]
                  [environ/environ.core "0.3.1"]
                  [org.clojure/data.json "0.2.6"]
-                 [org.clojure/tools.nrepl "0.2.13"]]
+                 [org.clojure/tools.nrepl "0.2.13"]
+                 [clojail "1.0.6"]]
   :main ^:skip-aot repl-bot.core
   :target-path "target/%s"
   :profiles {:uberjar {:aot :all}})
