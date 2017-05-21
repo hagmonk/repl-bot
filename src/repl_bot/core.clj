@@ -55,7 +55,7 @@
     (when (and (= (some-> channel str Long/parseLong) 315213511120912386)
                (not (re-find #"^\s*=>" command))
                (not (= user "repl-bot")))
-      (discord/answer data (some-> command eval-request last)))))
+      (discord/answer data (some-> command eval-request :result last)))))
 
 ; channel-id 315213511120912386
 (defn -main [& args]
