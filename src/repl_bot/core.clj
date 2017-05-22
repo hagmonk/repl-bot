@@ -55,7 +55,7 @@
     (when (and (= (some-> channel str Long/parseLong) 315213511120912386)
                (not (re-find #"^\s*=>" command))
                (not (re-find #"^\s*;"))
-               (not (re-find #"^\s*(comment"))
+               (not (re-find #"^\s*\(comment"))
                (not (= user "repl-bot")))
       (discord/answer data (some-> command eval-request :result last)))))
 
